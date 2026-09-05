@@ -1,0 +1,59 @@
+/**
+ * 1Fi design tokens.
+ * Values are derived from the reference screenshots of the 1Fi app
+ * (Shop page, Top Brands list, and the "Pay using 1Fi" EMI flow).
+ * Keep colours/spacing here so every component stays visually consistent.
+ */
+:root {
+  /* Brand */
+  --c-primary: #7c3aed;          /* 1Fi violet — CTAs, active states, links */
+  --c-primary-strong: #6d28d9;
+  --c-primary-soft: #f1e9fe;     /* pale violet chip / active tab pill */
+  --c-primary-100: #ede4fd;
+
+  /* Hero gradient (deep indigo → violet) */
+  --hero-from: #3b1e91;
+  --hero-mid: #4c249e;
+  --hero-to: #6a34c9;
+
+  /* Neutrals */
+  --c-bg: #f4f4f6;               /* app background */
+  --c-surface: #ffffff;          /* cards */
+  --c-ink: #14141f;              /* primary text (near-black) */
+  --c-ink-2: #3a3a49;
+  --c-muted: #8a8a99;            /* secondary text */
+  --c-muted-2: #a9a9b6;
+  --c-line: #ececf0;             /* hairline borders/dividers */
+  --c-danger: #e5484d;
+  --c-success: #2e9e63;
+  --c-online: #6a34c9;
+
+  /* Radii */
+  --r-sm: 10px;
+  --r-md: 14px;
+  --r-lg: 18px;
+  --r-xl: 24px;
+  --r-pill: 999px;
+
+  /* Elevation */
+  --shadow-card: 0 2px 10px rgba(20, 20, 31, 0.06);
+  --shadow-card-lg: 0 6px 22px rgba(20, 20, 31, 0.08);
+  --shadow-nav: 0 -2px 16px rgba(20, 20, 31, 0.06);
+
+  /* Spacing scale */
+  --s-1: 4px;
+  --s-2: 8px;
+  --s-3: 12px;
+  --s-4: 16px;
+  --s-5: 20px;
+  --s-6: 24px;
+  --s-8: 32px;
+
+  /* Type */
+  --font: "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Helvetica, Arial, sans-serif;
+
+  /* Layout */
+  --app-max-w: 420px;            /* phone-width app column */
+  --nav-h: 68px;                 /* bottom nav height */
+}

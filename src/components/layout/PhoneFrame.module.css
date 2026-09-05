@@ -1,0 +1,41 @@
+.stage {
+  min-height: 100dvh;
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  background: #e9e9ee;
+}
+
+.phone {
+  position: relative;
+  width: 100%;
+  max-width: var(--app-max-w);
+  background: var(--c-bg);
+  display: flex;
+  flex-direction: column;
+  min-height: 100dvh;
+  overflow: hidden;
+}
+
+/* On wider screens give the phone column a subtle device-like frame. */
+@media (min-width: 460px) {
+  .stage {
+    padding: 24px 0;
+  }
+  .phone {
+    min-height: min(880px, calc(100dvh - 48px));
+    max-height: calc(100dvh - 48px);
+    border-radius: 28px;
+    box-shadow: 0 20px 60px rgba(20, 20, 31, 0.22);
+    border: 1px solid rgba(20, 20, 31, 0.06);
+  }
+}
+
+.scroll {
+  flex: 1;
+  overflow-y: auto;
+  overflow-x: hidden;
+  -webkit-overflow-scrolling: touch;
+  /* leave room for the pinned bottom nav */
+  padding-bottom: calc(var(--nav-h) + 8px);
+}
