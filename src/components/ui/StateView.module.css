@@ -1,0 +1,41 @@
+.wrap {
+  min-height: 36dvh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 32px 24px;
+}
+
+.emoji {
+  font-size: 40px;
+  margin-bottom: 12px;
+}
+
+.title {
+  font-size: 17px;
+  font-weight: 700;
+  color: var(--c-ink);
+}
+
+.message {
+  margin-top: 6px;
+  font-size: 13.5px;
+  line-height: 1.5;
+  color: var(--c-muted);
+  max-width: 260px;
+}
+
+.action {
+  margin-top: 18px;
+  padding: 11px 22px;
+  border-radius: var(--r-pill);
+  background: var(--c-primary);
+  color: #fff;
+  font-weight: 700;
+  font-size: 14px;
+}
+.action:active {
+  background: var(--c-primary-strong);
+}

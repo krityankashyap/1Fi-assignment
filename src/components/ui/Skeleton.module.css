@@ -1,0 +1,26 @@
+.block {
+  display: block;
+  background: linear-gradient(
+    100deg,
+    #e9e9ef 30%,
+    #f4f4f8 50%,
+    #e9e9ef 70%
+  );
+  background-size: 200% 100%;
+  animation: shimmer 1.3s ease-in-out infinite;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: 180% 0;
+  }
+  100% {
+    background-position: -20% 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .block {
+    animation: none;
+  }
+}

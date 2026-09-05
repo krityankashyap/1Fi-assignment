@@ -36,6 +36,8 @@
   overflow-y: auto;
   overflow-x: hidden;
   -webkit-overflow-scrolling: touch;
-  /* leave room for the pinned bottom nav */
+}
+/* leave room for the pinned bottom nav on top-level tabs */
+.scroll[data-nav="on"] {
   padding-bottom: calc(var(--nav-h) + 8px);
 }

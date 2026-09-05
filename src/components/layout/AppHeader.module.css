@@ -1,0 +1,30 @@
+.wrap {
+  position: sticky;
+  top: 0;
+  z-index: 15;
+  background: var(--c-bg);
+  padding: 0 var(--s-5);
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  height: 52px;
+}
+
+.back {
+  display: grid;
+  place-items: center;
+  width: 32px;
+  height: 32px;
+  margin-left: -6px;
+  color: var(--c-ink);
+}
+
+.title {
+  font-size: 19px;
+  font-weight: 800;
+  color: var(--c-ink);
+  letter-spacing: -0.2px;
+}

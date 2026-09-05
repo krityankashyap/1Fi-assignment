@@ -1,0 +1,104 @@
+.card {
+  background: var(--c-surface);
+  border-radius: var(--r-lg);
+  box-shadow: var(--shadow-card);
+  overflow: hidden;
+  transition: opacity 0.2s ease;
+}
+.disabled {
+  opacity: 0.55;
+  pointer-events: none;
+}
+
+.header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 18px;
+  background: #fafafb;
+}
+
+.startsAt {
+  font-size: 15px;
+  color: var(--c-muted);
+  font-weight: 500;
+}
+.startsAt strong {
+  color: var(--c-ink);
+  font-weight: 800;
+}
+
+.toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  color: var(--c-primary);
+  font-weight: 700;
+  font-size: 14.5px;
+}
+
+.list {
+  border-top: 1px solid var(--c-line);
+}
+
+.row {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 16px 18px;
+  border-bottom: 1px solid var(--c-line);
+  transition: background 0.12s ease;
+}
+.list li:last-child .row {
+  border-bottom: none;
+}
+.active {
+  background: var(--c-primary-soft);
+}
+
+/* Radio dot */
+.radio {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  border: 2px solid var(--c-muted-2);
+  flex-shrink: 0;
+  position: relative;
+  transition: border-color 0.12s ease;
+}
+.radio[data-on="true"] {
+  border-color: var(--c-primary);
+}
+.radio[data-on="true"]::after {
+  content: "";
+  position: absolute;
+  inset: 3px;
+  border-radius: 50%;
+  background: var(--c-primary);
+}
+
+.tenure {
+  flex: 1;
+  text-align: left;
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--c-ink);
+}
+.rate {
+  color: var(--c-ink-2);
+  font-weight: 500;
+}
+
+.monthly {
+  font-size: 15px;
+  font-weight: 800;
+  color: var(--c-ink);
+  white-space: nowrap;
+}
+.per {
+  font-size: 12.5px;
+  font-weight: 600;
+  color: var(--c-muted);
+}

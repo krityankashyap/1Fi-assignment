@@ -1,0 +1,63 @@
+.body {
+  padding: 0 var(--s-5);
+}
+
+.imageWrap {
+  margin: 8px 0 4px;
+}
+
+.titleBlock {
+  text-align: center;
+  padding: 26px 0 4px;
+}
+
+.title {
+  font-size: 26px;
+  font-weight: 800;
+  color: var(--c-ink);
+  letter-spacing: -0.4px;
+}
+
+.subtitle {
+  margin-top: 6px;
+  font-size: 15px;
+  color: var(--c-muted);
+  font-weight: 500;
+}
+
+.priceBlock {
+  text-align: center;
+  padding: 10px 0 18px;
+}
+.price {
+  font-size: 40px;
+  font-weight: 800;
+  letter-spacing: -1px;
+  color: var(--c-ink);
+}
+
+.plans {
+  margin-top: 22px;
+}
+
+.description {
+  margin-top: 22px;
+  font-size: 13.5px;
+  line-height: 1.55;
+  color: var(--c-muted);
+}
+
+.section {
+  margin-top: 16px;
+}
+
+.bottomSpace {
+  height: 20px;
+}
+
+.skHeader {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 8px 0 18px;
+}
