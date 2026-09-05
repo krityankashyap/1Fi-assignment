@@ -1,0 +1,17 @@
+.tile {
+  border-radius: 14px;
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.04);
+  overflow: hidden;
+}
+
+.text {
+  color: #fff;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+  line-height: 1;
+  padding: 0 4px;
+  text-align: center;
+}

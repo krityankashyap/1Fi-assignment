@@ -1,0 +1,29 @@
+.wrap {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: var(--c-surface);
+  border: 1px solid var(--c-line);
+  border-radius: var(--r-pill);
+  padding: 0 16px;
+  height: 50px;
+  box-shadow: var(--shadow-card);
+}
+
+.icon {
+  color: var(--c-muted-2);
+  flex-shrink: 0;
+}
+
+.input {
+  flex: 1;
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 15px;
+  color: var(--c-ink);
+}
+
+.input::placeholder {
+  color: var(--c-muted-2);
+}

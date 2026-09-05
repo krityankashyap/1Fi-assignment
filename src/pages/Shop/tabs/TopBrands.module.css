@@ -1,0 +1,19 @@
+.heading {
+  font-size: 21px;
+  font-weight: 800;
+  color: var(--c-ink);
+  margin: 4px 0 14px;
+  letter-spacing: -0.3px;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.empty {
+  color: var(--c-muted);
+  font-size: 14px;
+  padding: 20px 0;
+}

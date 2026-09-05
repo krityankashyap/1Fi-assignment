@@ -1,0 +1,89 @@
+.hero {
+  position: relative;
+  background: linear-gradient(150deg, var(--hero-from) 0%, var(--hero-mid) 45%, var(--hero-to) 100%);
+  color: #fff;
+  padding: 0 var(--s-5) 46px;
+  border-bottom-left-radius: 26px;
+  border-bottom-right-radius: 26px;
+  overflow: hidden;
+}
+
+.inner {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--s-2);
+  margin-top: 8px;
+}
+
+.copy {
+  flex: 1;
+  min-width: 0;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 11.5px;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+  padding: 6px 12px;
+  border-radius: var(--r-pill);
+  background: rgba(255, 255, 255, 0.14);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  margin-bottom: 14px;
+}
+
+.title {
+  font-size: 27px;
+  line-height: 1.18;
+  font-weight: 800;
+  letter-spacing: -0.4px;
+}
+.title em {
+  font-style: italic;
+  font-weight: 800;
+}
+
+.sub {
+  margin-top: 12px;
+  font-size: 12.5px;
+  line-height: 1.5;
+  color: rgba(255, 255, 255, 0.82);
+  max-width: 230px;
+}
+
+/* Decorative product cluster (emoji stand-ins for the promo artwork). */
+.art {
+  position: relative;
+  width: 96px;
+  height: 130px;
+  flex-shrink: 0;
+}
+.bag {
+  position: absolute;
+  bottom: 6px;
+  right: 2px;
+  font-size: 58px;
+  filter: drop-shadow(0 6px 10px rgba(0, 0, 0, 0.25));
+}
+.item {
+  position: absolute;
+  font-size: 26px;
+  filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.25));
+}
+.i1 { top: 8px; right: 44px; transform: rotate(-12deg); }
+.i2 { top: 2px; right: 8px; transform: rotate(10deg); }
+.i3 { top: 38px; right: 30px; font-size: 30px; }
+.i4 { top: 40px; right: 0; font-size: 22px; transform: rotate(8deg); }
+
+.confetti {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  border-radius: 2px;
+  opacity: 0.9;
+}
+.c1 { top: 20px; left: 6px; background: #ffd54a; transform: rotate(20deg); }
+.c2 { top: 70px; left: 0; background: #ff7ab0; transform: rotate(-15deg); }
+.c3 { top: 100px; right: 60px; background: #7ad0ff; transform: rotate(35deg); }
